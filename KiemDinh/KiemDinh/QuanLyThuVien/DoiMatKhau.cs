@@ -23,10 +23,10 @@ namespace QuanLyThuVien
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text.Length - 1 < 5)//kiểm tra mật khẩu mới xem co lờn hơn 6 ký tụ ko
+            if (textBox2.Text.Length - 1 < 8)//kiểm tra mật khẩu mới xem co lờn hơn 6 ký tụ ko
                 MessageBox.Show("mật khẩu mới quá ngắn");
             else
-                if (textBox2.Text.Length - 1 > 30)//kiểm tra mật khẩu mới xem có bé hơn 30 ký tụ ko
+                if (textBox2.Text.Length - 1 > 20)//kiểm tra mật khẩu mới xem có bé hơn 30 ký tụ ko
                     MessageBox.Show("mật khẩu mới quá dài");
                 else
                     if (textBox2.Text != textBox3.Text)//kiểm tra mật khẩu mới và xác nhận mk co trung nha
@@ -71,5 +71,36 @@ namespace QuanLyThuVien
             }
         }
 
+        public bool checkPassNew(string Pass)
+        {
+            var a = Pass.Length;
+            if (a >= 8 && a <= 20)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkEqual(string PassNew, string PassNew2)
+        {
+            var a = PassNew;
+            var b = PassNew2;
+            if (a != b)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkCorrect(string PassOld, string PassOld2)
+        {
+            var a = PassOld;
+            var b = PassOld2;
+            if (a != b)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

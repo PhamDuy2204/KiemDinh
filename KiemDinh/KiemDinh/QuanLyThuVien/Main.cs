@@ -373,5 +373,15 @@ namespace QuanLyThuVien
             K.Show();
         }
 
+        public bool checkEmpty(string Acc)
+        {
+            var a = textBox1.Text;
+            if (a != " ")
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }

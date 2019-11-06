@@ -51,7 +51,7 @@ namespace QuanLyThuVien
                 if (textBox4.Text.Length - 1 == 0)
                     MessageBox.Show("Không được để trống tên nhân viên");
                 else
-                    if (textBox2.Text.Length - 1 == 0 || textBox3.Text.Length - 1 == 0)
+                    if (textBox2.Text.Length - 1 == 0)
                         MessageBox.Show("Không được để trống mật khẩu");
                     else
                         if (textBox3.Text.Length - 1 == 0)
@@ -69,7 +69,7 @@ namespace QuanLyThuVien
                                         if (textBox6.Text.Length - 1 <= 0 || textBox6.Text.Length - 1 > 12)
                                             MessageBox.Show("Số điện thoại phải dài hơn 12 số và nhỏ hơn 0 số");
                                         else
-                                            if (textBox9.Text.Length - 1 <= 17 || textBox9.Text.Length - 1 > 55)
+                                            if (textBox9.Text.Length - 1 <= 0 || textBox9.Text.Length - 1 > 2)
                                                 MessageBox.Show("Sai tuổi");
                                             else
                                             {
@@ -100,6 +100,86 @@ namespace QuanLyThuVien
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public bool checkTenNV(string TenNV)
+        {
+            var tenNV = TenNV.Length - 1;
+            if(tenNV==0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkPassEmpty(string Pass)
+        {
+            var matKhau = Pass.Length - 1;
+            if (matKhau == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkQuyen(string Quyen)
+        {
+            var quyenHan = Quyen.Length - 1;
+            if (quyenHan == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkDiaChi(string DiaChi)
+        {
+            var diaChi = DiaChi.Length - 1;
+            if (diaChi == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkChucVu(string ChucVu)
+        {
+            var chucVu = ChucVu.Length - 1;
+            if (chucVu == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkTuoi(string Tuoi)
+        {
+            var tuoi = Tuoi.Length - 1;
+            if (tuoi == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkTuoi2(string Tuoi2)
+        {
+            var tuoi = Tuoi2.Length - 1;
+            if (tuoi <= 0 || tuoi > 2)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkSDT(string SDT)
+        {
+            var sdt = SDT.Length - 1;
+            if (sdt <= 0 || sdt > 12)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

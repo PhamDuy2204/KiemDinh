@@ -1,0 +1,7 @@
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\bin\Debug\UnitTestLibrary.dll
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\bin\Debug\UnitTestLibrary.pdb
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\bin\Debug\QuanLyThuVien.exe
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\bin\Debug\QuanLyThuVien.pdb
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\obj\Debug\UnitTestLibrary.csprojResolveAssemblyReference.cache
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\obj\Debug\UnitTestLibrary.dll
+C:\Users\SoLoTop\Desktop\TrenTruong\kiemdinh\KiemDinh\KiemDinh\KiemDinh\UnitTestLibrary\obj\Debug\UnitTestLibrary.pdb
